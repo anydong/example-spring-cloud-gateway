@@ -16,7 +16,7 @@ public class Application {
     public RouteLocator routeLocator(RouteLocatorBuilder builder) {
         return builder.routes()
                 .route(r -> r.path("/ip")
-                        .uri("https://httpbin.org"))
+                        .uri("https://httpbin.biu.run"))
                 .build();
 
     }
