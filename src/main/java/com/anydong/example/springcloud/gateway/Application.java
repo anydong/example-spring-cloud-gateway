@@ -15,8 +15,8 @@ public class Application {
     @Bean
     public RouteLocator routeLocator(RouteLocatorBuilder builder) {
         return builder.routes()
-                .route(r -> r.path("/ip")
-                        .uri("https://httpbin.biu.run"))
+                .route(r -> r.path("/**")
+                        .uri("https://httpbin.biu.run").id("httpbin"))
                 .build();
 
     }
